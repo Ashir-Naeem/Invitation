@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wedding Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/11acc5a5c1.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cookie', cursive;
+      background-color: #ff99b6;
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner {
+      width: 100%;
+      height: 650px;
+      background: url(https://i.ibb.co/kHmMsgR/wed-img.jpg) no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0 0 500px 0;
+      padding-top: 40px;
+    }
+
+    .nav {
+      width: 90%;
+      background-color: rgba(255, 200, 200, 0.7);
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav b {
+      font-size: 40px;
+    }
+
+    /* .menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    } */
+
+    /* .menu a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      border-bottom: 3px solid #f15;
+    } */
+
+    .text {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .text h1 {
+      color: #f15;
+      font-size: 60px;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .date {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 28px;
+      padding: 10px 20px;
+      background-color: #f15;
+      color: #fff;
+      border-radius: 40px 0 40px 0;
+      transition: 0.3s;
+    }
+
+    .date:hover {
+      background-color: #fff;
+      color: #f15;
+    }
+
+    .section {
+      width: 100%;
+      background-color: #efefef;
+      padding: 40px 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 50px;
+      color: #f15;
+      margin-bottom: 20px;
+    }
+
+    .us, .venue, .party {
+      width: 90%;
+      background-color: #fff;
+      border-radius: 20px;
+      margin: 20px auto;
+      padding: 30px;
+      box-shadow: 0 3px 10px rgba(100, 100, 100, 0.3);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .us img, .venue img, .party img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border-top: 10px solid #f15;
+      border-bottom: 10px solid #f15;
+    }
+
+
+    .venue img, .party img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #f15;
+    }
+
+    .venue p, .party p {
+      font-size: 22px;
+      color: #333;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .text h1 {
+        font-size: 45px;
+      }
+
+      .date {
+        font-size: 22px;
+      }
+
+      .menu {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .us img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .venue img, .party img {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav b {
+        font-size: 28px;
+      }
+
+      .menu a {
+        font-size: 18px;
+      }
+
+      .text h1 {
+        font-size: 36px;
+      }
+
+      .date {
+        font-size: 18px;
+      }
+
+      .section h2 {
+        font-size: 36px;
+      }
+
+      .us1 span {
+        font-size: 24px;
+      }
+
+      .venue p, .party p {
+        font-size: 18px;
+      }
+
+      footer {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <div class="nav">
+        <b>Engagement Ceremony</b>
+      </div>
+      <div class="text">
+        <h1>Shaheer & Unaiza</h1>
+        <span class="date">On Sunday 20th November, 2025</span>
+      </div>
+    </div>
+
+
+      <h2 id="venue">You're Invited</h2>
+      <div class="venue">
+        <img src="https://i.ibb.co/wZk2sTj/wed-venue.jpg" alt="Venue">
+        <p><h2>To Celebrate the Engagement of</h2>
+            <div class="names">Shaheer Mohsin & Unaiza Ahmed</div>
+            <div class="details">
+              On Sunday, 20th April 2025<br>
+              At 5:00 PM<br>
+            </div>
+            <div class="footer">
+              With blessings from both families<br>
+              Join us for an evening filled with joy, laughter, and love.
+            </div></p>
+      </div>
+
+      <!-- <h2 id="party">Party</h2>
+      <div class="party">
+        <img src="https://i.ibb.co/dMb2T7P/wed-party.jpg" alt="Party">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+    </div> -->
+
+  </div>
+</body>
+</html>
